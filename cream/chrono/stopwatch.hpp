@@ -3,8 +3,8 @@
  *
  * Distributed under the MIT License.
  **************************************************************/
-#ifndef CREAM_STOPWATCH_HPP
-#define CREAM_STOPWATCH_HPP
+#ifndef CREAM_CHRONO_STOPWATCH_HPP
+#define CREAM_CHRONO_STOPWATCH_HPP
 
 #include <cstdio>
 #include <chrono>
@@ -32,10 +32,10 @@ namespace cream {
         }
 
         template<typename Unit = std::chrono::milliseconds, int Precision = 4, class Clock = std::chrono::system_clock>
-        class StopWatch {
+        class Stopwatch {
         public:
-            StopWatch(const char* _title = "") : title(_title), start(Clock::now()) {}
-            virtual ~StopWatch() {
+            Stopwatch(const char* _title = "") : title(_title), start(Clock::now()) {}
+            virtual ~Stopwatch() {
                 const TimePoint end = Clock::now();
                 typename Duration::rep elapsed = std::chrono::duration_cast<Duration>(end - start).count();
                 typename Duration::rep elapsedInteger = elapsed / DecimalPow::value;
@@ -56,4 +56,4 @@ namespace cream {
     }
 }
 
-#endif // CREAM_STOPWATCH_HPP
+#endif // CREAM_CHRONO_STOPWATCH_HPP
