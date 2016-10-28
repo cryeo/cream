@@ -9,9 +9,7 @@
 #include <cstdio>
 #include <chrono>
 #include <ratio>
-
-#define CREAM_PUBLIC_NAMESPACE(NAME)  namespace NAME {}; namespace
-#define CREAM_PRIVATE_NAMESPACE(NAME) namespace NAME
+#include <cream/common/common.hpp>
 
 namespace cream {
     CREAM_PUBLIC_NAMESPACE(detail) {
