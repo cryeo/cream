@@ -9,4 +9,4 @@
 #define CREAM_PUBLIC_NAMESPACE(NAME)  namespace NAME {}; namespace
 #define CREAM_PRIVATE_NAMESPACE(NAME) namespace NAME
 
-#endif // CREAM_COMMON_COMMON_HPP
+#endif

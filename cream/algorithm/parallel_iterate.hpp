@@ -9,6 +9,7 @@
 #include <array>
 #include <thread>
 
+#include <cream/algorithm/for_each.hpp>
 #include <cream/algorithm/enumerate.hpp>
 
 namespace cream {
@@ -56,4 +57,5 @@ namespace cream {
         }
     }
 }
-#endif //CREAM_ALGORITHM_PARALLEL_ITERATE_HPP
+
+#endif

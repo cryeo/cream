@@ -29,4 +29,4 @@ namespace cream {
     }
 }
 
-#endif //CREAM_ENUMERATE_HPP
+#endif

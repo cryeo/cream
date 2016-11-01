@@ -54,4 +54,4 @@ namespace cream {
     }
 }
 
-#endif // CREAM_CHRONO_STOPWATCH_HPP
+#endif
